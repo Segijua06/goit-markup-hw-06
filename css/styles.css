@@ -558,7 +558,6 @@ header {
 }
 .portfolio-item-description {
     position: absolute;
-    /* display: block; */
     top: 100%;
     
     transition: var(--animation);
@@ -603,8 +602,8 @@ header {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-item:hover .portfolio-item-description,
-.portfolio-item:focus .portfolio-item-description {
+.item-link:hover .portfolio-item-description,
+.item-link:focus .portfolio-item-description {
     transform: translateY(-100%) translateX(0);
     opacity: 1;
 }
