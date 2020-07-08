@@ -54,7 +54,40 @@
             <div class="container">
                 <!-- <img src="./images/main.jpg" alt="Эфективные решения"> -->
                 <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button class="button">Заказать услугу</button>
+                <button  class="button" data-modal-open>Заказать услугу</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <b>Оставьте свои данные, мы вам перезвоним</b>
+                        <form>   
+                            <input type="text" name="name" id="name">                         
+                            <label for="name">Имя</label>
+                            
+                            
+                            <br>    
+
+                            <label for="tel">Телефон</label>
+                            <input type="tel" name="tel" id="tel" />
+
+                            <br>
+
+                            <label for="mail">Почта</label>
+                            <input type="email" name="mail" id="mail" />
+
+                            <br>
+                            
+                            <input type="checkbox" name="policy" id="policy">
+                            <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+
+                            <br>
+                            <label for="comment">Коментарий</label>
+                            <textarea name="comment" id="comment" cols="50" rows="10">Коментарий</textarea>
+                            <button type="submit">Отправить</button>
+                            
+                        </form>
+                        <button data-modal-close>Закрыть</button>
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -401,6 +434,7 @@
             </div>
         </section>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

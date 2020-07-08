@@ -11,7 +11,7 @@
     --main-8-color: rgba(255, 255, 255, 0.1);
     --main-9-color: #AFB1B8;
     --border-color: #ECECEC;
-    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --animation: 900ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -251,7 +251,7 @@ header {
     text-transform: uppercase;
 }
 
-.hero button {
+.hero .button {
     cursor: pointer; 
     background-color: var(--main-2-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -272,6 +272,31 @@ header {
 .hero .button:focus {
     background-color: var(--main-3-color);
     color: var(--main-2-color);
+}
+            /* Модалка */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 528px;
+    min-height: 581px;
+    background-color: var(--main-3-color);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    opacity: 1;
+    visibility: visible;
+    transition: var(--animation);
+}
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal {
+    padding: 40px 40px;
+}
+textarea {
+    resize: none;
 }
             /* Шапка сайта */
 
