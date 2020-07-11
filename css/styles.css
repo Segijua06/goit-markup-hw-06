@@ -519,6 +519,7 @@ header {
     left: 16px;
     color: rgba(255, 255, 255, 0.6);
     transition: var(--animation);
+    cursor: pointer;
 }
 .footer-input {
     min-width: 358px;
@@ -530,6 +531,7 @@ header {
     margin-right: 12px;
     color: var(--main-3-color);
     padding-left: 16px;  
+    cursor: pointer;
     /* transition: var(--animation);   */
 }
 .footer-input {
@@ -751,6 +753,7 @@ header {
     width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    cursor: pointer;
 }
 .form-input-comment {
     padding-left: 16px;
@@ -764,6 +767,7 @@ header {
     left: 42px;
     transform: translateY(-50%);
     transition: var(--animation);
+    cursor: pointer;
 }
 .form-label-comment {
     left: 16px;
@@ -778,6 +782,7 @@ header {
     width: 18px;
     height: 18px;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .form-field:focus-within > .form-input,
