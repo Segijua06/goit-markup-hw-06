@@ -280,12 +280,14 @@ header {
     padding-bottom: 0;
 }
 .visually-hidden {
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    overflow: hidden;
     position: absolute;
-    white-space: nowrap;
     width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);    
+    overflow: hidden;    
 }
 
 .team-item:not(:last-child),
@@ -809,19 +811,60 @@ header {
     left: 16px;
 }
 
-.rules {
-    color: var(--main-2-color);
-}
-
 .policy {
     color: var(--main-2-color);
     text-decoration: none; 
 }
-.modal input[type="checkbox"] {
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+    
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);    
+    overflow: hidden;
+}
+
+.checkbox-icon {
+    display: inline-block;
     width: 16px;
     height: 15px;
-    left: 0;
+    background-color: var(--main-3-color);
+    border: 2px solid var(--main-1-color);
+    border-radius: 4px;
+    margin-right: 7px;
+
+    transition: var(--animation);
 }
+
+.checkbox:checked + .checkbox-icon {
+    border-color: var(--main-2-color);
+    background-color: var(--main-2-color);
+    background-image: url(../images/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+}
+
+.checkbox:focus + .checkbox-icon {
+    /* outline: 1px solid var(--main-2-color); */
+    border-color: var(--main-2-color);
+}
+
+.rules {
+    color: var(--main-2-color);
+}
+
 .send {
     min-width: 200px;
     padding: 10px 55px;
