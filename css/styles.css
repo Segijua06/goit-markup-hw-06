@@ -71,6 +71,7 @@ footer .container {
 }
 
 .title {
+    color: var(--main-1-color);
     padding-bottom: 50px;
     font-size: 36px;
     line-height: 42px;
@@ -316,7 +317,9 @@ header {
 }
     
 .features-item-title {
-    line-height: 1.14;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
     padding-top: 30px;
     padding-bottom: 10px;
 }
@@ -369,11 +372,19 @@ header {
 }
 .team-item-title {
     padding-top: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
 }
 
 .team-item-description {
     padding-top: 10px;
     padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 19px;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .social {
@@ -701,7 +712,7 @@ header {
 
              /* Модалка */
 .backdrop {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
