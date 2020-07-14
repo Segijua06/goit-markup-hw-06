@@ -104,16 +104,17 @@ header {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    font-family: "Roboto";
 }
 
 .logo {
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    font-family: 'Raleway';    
     color: var(--main-1-color);
     text-decoration: none;
+    
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
 }
 
 .web {
@@ -498,6 +499,7 @@ header {
 }
 .address-item {
     font-size: 14px;
+    line-height: 24px;
     letter-spacing: 0.03em;
 }
 .address-item a {
@@ -540,6 +542,9 @@ header {
     color: rgba(255, 255, 255, 0.6);
     transition: var(--animation);
     cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
 }
 .footer-input {
     min-width: 358px;
@@ -617,8 +622,7 @@ header {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-bottom: 50px;   
-    
+    margin-bottom: 50px;
 }
 
 
@@ -630,6 +634,8 @@ header {
     transition: var(--animation);
 }
 
+
+
 .our-project .button {
     margin: 0;
     padding: 6px 22px;
@@ -640,6 +646,10 @@ header {
     border-radius: 4px;
     border: 0;
     transition: var(--animation);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
 }
 
 .our-project .button:hover,
@@ -752,9 +762,9 @@ header {
 .modal-title {
     display: block;
     padding-bottom: 30px;
-    font-weight: 700;
-    line-height: 1.15;
     font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
 }
 
 .form-field,
@@ -788,6 +798,9 @@ header {
     transform: translateY(-50%);
     transition: var(--animation);
     cursor: pointer;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
 }
 .form-label-comment {
     left: 16px;
@@ -827,11 +840,6 @@ header {
     color: var(--main-2-color);
     transform: translateY(-25px);
     left: 16px;
-}
-
-.policy {
-    color: var(--main-2-color);
-    text-decoration: none; 
 }
 
 .checkbox-label {
@@ -878,9 +886,14 @@ header {
     /* outline: 1px solid var(--main-2-color); */
     border-color: var(--main-2-color);
 }
-
+.policy,
 .rules {
-    color: var(--main-2-color);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+.rules {
+    color: var(--main-2-color);    
 }
 
 .send {
