@@ -555,8 +555,8 @@ header {
     background-color: var(--main-5-color);
     margin-right: 12px;
     color: var(--main-3-color);
-    padding-left: 16px;  
-    cursor: pointer;
+    /* padding-left: 16px;   */
+    /* cursor: pointer; */
     /* transition: var(--animation);   */
 }
 .footer-input {
