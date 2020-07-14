@@ -352,6 +352,10 @@ header {
     color: var(--main-3-color);
     padding-top: 27px;
     padding-bottom: 27px;
+
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
 }
             /* Tech skills container end */
 
@@ -373,6 +377,12 @@ header {
 .team-item-title {
     padding-top: 30px;
     font-weight: 500;
+    /* font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em; */
+}
+.team-item-title,
+.team-item-description {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
@@ -381,10 +391,7 @@ header {
 .team-item-description {
     padding-top: 10px;
     padding-bottom: 16px;
-    font-size: 16px;
-    line-height: 19px;
-    font-size: 16px;
-    line-height: 19px;
+    color: var(--main-4-color);
 }
 
 .social {
